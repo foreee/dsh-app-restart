@@ -1,0 +1,44 @@
+{
+  "name": "dsh-app-restart",
+  "description": "Adds a Restart Application section with a button to the DeepSeek Harness desktop app Settings; performs a graceful quit followed by an automatic relaunch.",
+  "version": "0.1.1",
+  "icon": "icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "homepage": "https://github.com/foreee/dsh-app-restart#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foreee/dsh-app-restart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/foreee/dsh-app-restart/issues"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0-0 || >=0.3.0-rc.0 <0.4.0-0"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.0-rc.2 <0.3.0-0 || >=0.3.0-rc.0 <0.4.0-0"
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.zh.md"
+  ],
+  "license": "MIT"
+}

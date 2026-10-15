@@ -1,0 +1,4 @@
+node_modules/
+test/react-env/
+*.log
+.DS_Store

@@ -1,0 +1,9 @@
+# dsh-app-restart bundle patch.
+#
+# Applied as a profile bundle layer (the package.json `dsh.bundle.patch`
+# field). It inserts one Loader entry whose host half mounts the restart
+# HTTP routes; the browser half is discovered from the same package's
+# `dsh.client` declaration by client-modules.
+- insert:
+    - id: dsh-app-restart
+      name: dsh-app-restart
