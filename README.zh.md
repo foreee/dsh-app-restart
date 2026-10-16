@@ -4,6 +4,8 @@
 
 [English](README.md) | 中文
 
+![设置页中的应用重启区块](assets/screenshot-settings-zh.png)
+
 ## 功能说明
 
 - 设置页新增"应用重启"区块，说明重启行为，并显示当前环境是否支持。

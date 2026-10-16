@@ -4,6 +4,8 @@ Adds a **Restart application** section to the DeepSeek Harness desktop app Setti
 
 English | [中文](README.zh.md)
 
+![Restart application section in Settings](assets/screenshot-settings-zh.png)
+
 ## What it does
 
 - Settings gains a new section ("Restart App") listing what the restart will do and whether the environment supports it.
